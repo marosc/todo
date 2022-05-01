@@ -12,8 +12,8 @@ export default function App() {
     <NavigationContainer>{
         <Stack.Navigator initialRouteName='Home'>
           <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'To-Do Lists' }} />
-          <Stack.Screen name="List" component={ListScreen} initialParams={{ listId: 2, listName: "Hej" }}  options={({ route }) => ({ title: route.params.listName })} />
-          <Stack.Screen name="Detail" component={DetailScreen} options={{ title: 'Edit task' }} initialParams={{ listId: 2, taskId: 2 }} />
+          <Stack.Screen name="List" component={ListScreen}  options={({ route }) => ({ title: route.params.listName })} />
+          <Stack.Screen name="Detail" component={DetailScreen} options={{ title: 'Edit task' }} />
         </Stack.Navigator>
     }</NavigationContainer>   
   );
